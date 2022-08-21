@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BTS Picture Puzzle</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!--css sheet linked to html file-->
+        <link rel = "stylesheet" href="picturepuzzle.css">
+
+        <!-- javascript file linked to html file-->
+        <script src="picturepuzzle.js"></script>
+            
+    </head>
+
+    <body>
+        <!-- addeed header of the puzzle-->
+        <header> Picture Puzzle </header>
+    
+        <!--Logo added to html-->
+        <img id="title" src="BTS_Logo.png">
+          
+        <!-- board adedd to html-->
+        <div id= "board"> </div>
+
+        <!-- adding a solved board-->
+        <div id = "solvedboard">
+            <img src= "BTS.jpg">
+        </div>
+        
+
+         <!-- popup message start -->
+         <div id='popup'>
+            <div id='message'>
+                <br>Solve the puzzle by rearranging them to the picture shown.
+            </div>
+            <button id='startBtn' class="btn btn-success"  onclick="shuffle()">
+                Start
+            </button><br/><br/>
+        </div>
+          <!-- popup message end -->
+
+        <!-- turns span id added-->
+        <h1> Turns: <span id= "turns">0</span></h1>
+        <br/> 
+        
+        
+       
+    </body>
+</html>
